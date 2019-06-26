@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="bootstrap.css" rel="stylesheet" type="text/css">
+        <script src="jquery-3.4.1.js"></script>
+        <script src="scripts1.js"></script>
+		<title>Contact Form</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<div id="main"> 
+      
+			<div id="content">
+
+				<div >
+					<h1>Contact Form</h1> 
+				</div>
+				<!-- Create new div contact form -->
+				<div id="divform">
+					<h2>Add a new contact</h2>
+					<form id="form" onsubmit="return contact_function()">
+						<label>
+							<small class="rq">*</small>
+							First name:
+							<input type="text" id="fname" name="first_name" placeholder="Your first name">
+
+						</label>
+
+						<label>
+							<small class="rq">*</small>
+							Second name:
+							<input type="text" id="sname" name="second_name" placeholder="Your second name">
+						</label>
+
+						<label>
+							Phone Number:
+							<input type="tel" id="tel" name="phone_number" placeholder="Your phone Number" onclick="saveContact()">
+						</label>
+
+						<label>
+							Email:
+							<input type="email" id="email" name="email" placeholder="Your Email">
+						</label>
+
+						<label>
+							Address:
+							<input type="text" id="address" name="address" placeholder="Your Address" >
+						</label>
+						<br>
+							
+						<button type="submit" id="save-id"><span class ="clickable">Save</span></button>
+						
+					</form>
+					
+
+				</div>
+				<!-- Create new search field form -->
+				<div id="search">
+					<h2>Contact Search</h2>
+					<form class="example" onsubmit="search_function()">
+	  					
+	  					<input type = "text" id = "txtOutput" /> 
+	  					<button type="submit" id="search-id"><span class= "clickable"> Search </span></button>
+	  					
+	  				</form>
+				</div>
+			</div>
+		</div>
+			
+		<script type="text/javascript" src="scripts1.js" charset="utf-8"></script>
+		
+	</body>
+
+</html>
+                        <!-- <input type="text" id="search-id" placeholder="Enter Contact name.." name="search"> -->
+
+	  					<!--input type="text" name="">
+	  					<!--input value="search" type="button" name="">
+	  					--
+				
