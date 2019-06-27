@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="bootstrap.css" rel="stylesheet" type="text/css">
         <script src="jquery-3.4.1.js"></script>
         <script src="scripts1.js"></script>
@@ -21,52 +24,64 @@
 				<div id="divform">
 					<h2>Add a new contact</h2>
 					<form id="form" onsubmit="return contact_function()">
-						<label>
-							<small class="rq">*</small>
-							First name:
-							<input type="text" id="fname" name="first_name" placeholder="Your first name">
+						<div class= "form-group row">
+							<label class="col-sm-3 col-form-label" for = "fname"><strong>First Name:</strong></label>
+							<div class = "col-sm-9">
+								<input type="text" id="fname" name="first_name" placeholder="Your first name" class="form-control">
+							</div>
 
-						</label>
-
-						<label>
-							<small class="rq">*</small>
-							Second name:
-							<input type="text" id="sname" name="second_name" placeholder="Your second name">
-						</label>
-
-						<label>
-							Phone Number:
-							<input type="tel" id="tel" name="phone_number" placeholder="Your phone Number" onclick="saveContact()">
-						</label>
-
-						<label>
-							Email:
-							<input type="email" id="email" name="email" placeholder="Your Email">
-						</label>
-
-						<label>
-							Address:
-							<input type="text" id="address" name="address" placeholder="Your Address" >
-						</label>
+						</div>
 						<br>
-							
-						<button type="submit" id="save-id"><span class ="clickable">Save</span></button>
+						
+						<div class= "form-group row">
+							<label class="col-sm-3 col-form-label" for = "sname"><strong>Second Name:</strong></label>
+							<div class = "col-sm-9">
+								<input type="text" id="sname" name="second_name" placeholder="Your second_name" class="form-control">
+							</div>
+						</div>
+						<br>
+						<div class= "form-group row">
+							<label class="col-sm-3 col-form-label" for = "fname"><strong>Phone Contact:</strong></label>
+							<div class = "col-sm-9">
+								<input type="text" id="sname" name="phone" placeholder="Your phone contact" class="form-control">
+							</div>
+						</div>
+							<br>
+
+						<div class= "form-group row">
+							<label class="col-sm-3 col-form-label"><strong>Email:</strong></label>
+							<div class = "col-sm-9">
+								<input type="text" id="Email" name="Email" placeholder="Your Email" class="form-control">
+							</div>
+						</div>
+							<br>
+
+						<div class= "form-group row">
+							<label class="col-sm-3 col-form-label"><strong>Physical Address:</strong></label>
+							<div class = "col-sm-9">
+								<input type="text" id="" name="second_name" placeholder="Your Physical Address" class="form-control">
+							</div>
+						<br>
+						<div class="row">
+                    <div class="col-sm-9 offset-sm-3">
+                        <button type="submit"id="save-id"><span class ="btn btn-primary"> Save </span></button>
+                    </div>
+                </div>
 						
 					</form>
-					
-
-				</div>
+			</div>
 				<!-- Create new search field form -->
 				<div id="search">
 					<h2>Contact Search</h2>
 					<form class="example" onsubmit="search_function()">
 	  					
-	  					<input type = "text" id = "txtOutput" /> 
-	  					<button type="submit" id="search-id"><span class= "clickable"> Search </span></button>
+	  					<input type = "text" id = "txtOutput" class="form-control"/>
+	  					<br> 
+	  					<button type="submit" id="search-id"><span class= "btn btn-primary"> Search </span></button>
 	  					
 	  				</form>
 				</div>
-			</div>
+			
 		</div>
 			
 		<script type="text/javascript" src="scripts1.js" charset="utf-8"></script>
